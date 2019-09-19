@@ -1,0 +1,28 @@
+curl -X POST --user "lambda-client:lambda-secret" -d "grant_type=password&username=admin&password=password" http://bquizza-starthere.herokuapp.com/login
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/users/users
+
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" -d "{\"username\": \"Ginger\", \"password\": \"EATEATEAT\"}" http://bquizza-starthere.herokuapp.com/createnewuser
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/oauth/revoke-token
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/roles/roles
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/roles/role/1
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/roles/role/name/admin
+
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" -d "{\"name\": \"test\"}" http://bquizza-starthere.herokuapp.com/roles/role
+
+curl -X DELETE -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/roles/role/16
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/users/users
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/users/user/4
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/users/user/name/admin
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer 5fdcfb27-295b-4189-a067-cf282b159e73" http://bquizza-starthere.herokuapp.com/users/getusername
+
+
+
